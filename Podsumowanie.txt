@@ -36,3 +36,4 @@
      dotnet aspnet-codegenerator controller -name ProductsController -m Product -dc ShopContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
 
 
+4) Tworzymy nowy aplikacje MVC - ale tym razem bedzie ona korzystac z api 

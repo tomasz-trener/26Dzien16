@@ -13,14 +13,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06Shop.Shared", "P06Shop.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07Shop.DataSeeder", "P07Shop.DataSeeder\P07Shop.DataSeeder.csproj", "{3E5B50B1-B18E-4992-BF92-7DC382306244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08ShopWebApp.Client", "P08ShopWebApp.Client\P08ShopWebApp.Client.csproj", "{4FC71A37-319B-4D7E-9A1A-BF5998AC2375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08ShopWebApp.Client", "P08ShopWebApp.Client\P08ShopWebApp.Client.csproj", "{4FC71A37-319B-4D7E-9A1A-BF5998AC2375}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E92D0ADF-DB29-4B11-97DB-06565514D6C0}"
 	ProjectSection(SolutionItems) = preProject
 		Podsumowanie.txt = Podsumowanie.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09ShopWebAppMVC.Client", "P09ShopWebAppMVC.Client\P09ShopWebAppMVC.Client.csproj", "{8949A338-ADE3-4490-B51F-44441A540E15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09ShopWebAppMVC.Client", "P09ShopWebAppMVC.Client\P09ShopWebAppMVC.Client.csproj", "{8949A338-ADE3-4490-B51F-44441A540E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10ShopWebAppMVC.Client", "P10ShopWebAppMVC.Client\P10ShopWebAppMVC.Client.csproj", "{3556F00C-212A-4E1C-8989-3A72D04604F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{8949A338-ADE3-4490-B51F-44441A540E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8949A338-ADE3-4490-B51F-44441A540E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8949A338-ADE3-4490-B51F-44441A540E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3556F00C-212A-4E1C-8989-3A72D04604F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3556F00C-212A-4E1C-8989-3A72D04604F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3556F00C-212A-4E1C-8989-3A72D04604F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3556F00C-212A-4E1C-8989-3A72D04604F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

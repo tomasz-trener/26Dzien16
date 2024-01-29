@@ -1,5 +1,5 @@
 
-1) dodanie aplikacji P08ShopWebApp.Client typu raze pages 
+1) dodanie aplikacji P08ShopWebApp.Client typu razor pages 
 
 - dodanie strony calculator (idenyfikacja ró¿nic ¿adañ typu GET i POST)
 - dodanie strony CalcualtorBinding (uzycie mechanizmu bindowania danych z formualrza do modelu)
@@ -37,3 +37,9 @@
 
 
 4) Tworzymy nowy aplikacje MVC - ale tym razem bedzie ona korzystac z api 
+ - najpierw zrobilismy scaffolding bazy 
+ - potem na podstawie utworzonego datacontextu zrobilsimy scaffolding kodu (zrobienie CRUD controlera)
+ - potem przenieslismy ProductServiceDoShared -> zeby korzysta³ z niego klient WPF oraz klient MVC 
+ - wstrzyklenlismy w program.cs konfiguracje serwisów oraz pobralismy konfiguracje AppSetings z appsetings.json, która zawiera adresy endpointów 
+ - podmieniliœmy wgyenerowane metody na metody, które komunikuja sie z API zamist bazy danych 
+

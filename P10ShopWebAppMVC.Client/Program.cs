@@ -21,6 +21,7 @@ var uriBuilder = new UriBuilder(appSettingsSection.BaseApiUrl)
 };
 
 builder.Services.AddHttpClient<IProductService, ProductService>(client => client.BaseAddress = uriBuilder.Uri);
+builder.Services.Configure<AppSettings>(appSettings);
 
 var app = builder.Build();
 

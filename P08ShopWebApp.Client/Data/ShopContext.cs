@@ -18,8 +18,12 @@ public partial class ShopContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("name=AzureDBConnection");
+    // tego nie potrzebujemy poniewaz ustawienia sa w program.cs 
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseSqlServer("name=AzureDBConnection");
+
+  
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

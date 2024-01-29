@@ -12,12 +12,12 @@
 	@* method="get" *@
 
 	<label for="Number1">Number 1:</label>
-	<input id="Number1" name="Number1" />
+	<input id="Number1" name="Number1" value="@Model.Number1" />
 	<br />
 	<label for="Number2">Number 2:</label>
-	<input id="Number2" name="Number2" />
+	<input id="Number2" name="Number2" value="@Model.Number2" />
 
 	<br />
 	<input type="submit" value="Calculate sum" />
-	<p>Result: </p>
+	<p>Result: @Model.Result</p>
 </form>

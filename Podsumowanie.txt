@@ -6,17 +6,25 @@
 
 2) uzycie mechnianizmu Scaffolding do zmapowania bazy danych na klasy (podejœcie databse first)
 
-polecenie: 
-dotnet ef dbcontext scaffold "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=mysupershop;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
+- scaffolding
+	polecenie: 
+	dotnet ef dbcontext scaffold "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=mysupershop;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
 
-dotnet ef dbcontext scaffold "name=DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
-(ten sposób pobiera connection string z appssettings ale uwaga! nie widzi Secrets.json 
-mozna to obejœæ: https://stackoverflow.com/questions/58816298/using-scaffold-dbcontext-with-user-secrets)
+	dotnet ef dbcontext scaffold "name=DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
+	(ten sposób pobiera connection string z appssettings ale uwaga! nie widzi Secrets.json 
+	mozna to obejœæ: https://stackoverflow.com/questions/58816298/using-scaffold-dbcontext-with-user-secrets)
 
 
-wykonuje mapwanie ale zeby zadzia³o to upoewniamy sie ze mamy zainsalowany dotnet ef 
-dotnet tool install --global dotnet-ef --version 8.0.0  (opcjonalnie podajemy wersje jesli nie mamy zainstalowanej najnowszej wersji core)
+	wykonuje mapwanie ale zeby zadzia³o to upoewniamy sie ze mamy zainsalowany dotnet ef 
+	dotnet tool install --global dotnet-ef --version 8.0.0  (opcjonalnie podajemy wersje jesli nie mamy zainstalowanej najnowszej wersji core)
 
-potrzebujemy jeszcze dotnet add package Microsoft.EntityFrameworkCore.Design
+	potrzebujemy jeszcze dotnet add package Microsoft.EntityFrameworkCore.Design
 
-oraz add package Microsoft.EntityFrameworkCore.SqlServer
+	oraz add package Microsoft.EntityFrameworkCore.SqlServer
+
+- dodalismy recznie wyswietlanie listy produktów
+
+- uzylismy wbudowane w visual studio scaffoldingu do wygenerowania automatycznego widków razor CRUD 
+
+3) Tworzymy aplikacjê MVC 
+

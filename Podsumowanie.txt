@@ -10,7 +10,7 @@
 	polecenie: 
 	dotnet ef dbcontext scaffold "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=mysupershop;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
 
-	dotnet ef dbcontext scaffold "name=DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
+	dotnet ef dbcontext scaffold "name=AzureDBConnection" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
 	(ten sposób pobiera connection string z appssettings ale uwaga! nie widzi Secrets.json 
 	mozna to obejœæ: https://stackoverflow.com/questions/58816298/using-scaffold-dbcontext-with-user-secrets)
 
@@ -27,4 +27,12 @@
 - uzylismy wbudowane w visual studio scaffoldingu do wygenerowania automatycznego widków razor CRUD 
 
 3) Tworzymy aplikacjê MVC 
+
+ - podstawy komunikacji kontroler-vidok-model - calculator i newCalculator
+ - zrobilismy scaffoling bazy (wczesniej skopiowaliœmy z csproj paczki potrzebne do scaffoldingu)
+ - robimy scaffolding kodu 
+   - najpierw musimy zainstalowaæ: dotnet tool install -g dotnet-aspnet-codegenerator
+   - generujemy automatycznie gotowy kontroler typu CRUD :
+     dotnet aspnet-codegenerator controller -name ProductsController -m Product -dc ShopContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+
 

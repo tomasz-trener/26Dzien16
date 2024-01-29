@@ -44,4 +44,4 @@
  - podmieniliœmy wgyenerowane metody na metody, które komunikuja sie z API zamist bazy danych 
 
 
- tryb: 
+ tryb: zdalnie/stacjonarnie ? 

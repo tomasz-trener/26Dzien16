@@ -43,3 +43,5 @@
  - wstrzyklenlismy w program.cs konfiguracje serwisów oraz pobralismy konfiguracje AppSetings z appsetings.json, która zawiera adresy endpointów 
  - podmieniliœmy wgyenerowane metody na metody, które komunikuja sie z API zamist bazy danych 
 
+
+ tryb: 

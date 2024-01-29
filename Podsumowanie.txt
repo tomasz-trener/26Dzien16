@@ -1,37 +1,37 @@
 
 1) dodanie aplikacji P08ShopWebApp.Client typu razor pages 
 
-- dodanie strony calculator (idenyfikacja rÛønic øadaÒ typu GET i POST)
+- dodanie strony calculator (idenyfikacja r√≥≈ºnic ≈ºada≈Ñ typu GET i POST)
 - dodanie strony CalcualtorBinding (uzycie mechanizmu bindowania danych z formualrza do modelu)
 
-2) uzycie mechnianizmu Scaffolding do zmapowania bazy danych na klasy (podejúcie databse first)
+2) uzycie mechnianizmu Scaffolding do zmapowania bazy danych na klasy (podej≈õcie databse first)
 
 - scaffolding
 	polecenie: 
 	dotnet ef dbcontext scaffold "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=mysupershop;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
 
 	dotnet ef dbcontext scaffold "name=AzureDBConnection" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Data --context ShopContext --force
-	(ten sposÛb pobiera connection string z appssettings ale uwaga! nie widzi Secrets.json 
-	mozna to obejúÊ: https://stackoverflow.com/questions/58816298/using-scaffold-dbcontext-with-user-secrets)
+	(ten spos√≥b pobiera connection string z appssettings ale uwaga! nie widzi Secrets.json 
+	mozna to obej≈õƒá: https://stackoverflow.com/questions/58816298/using-scaffold-dbcontext-with-user-secrets)
 
 
-	wykonuje mapwanie ale zeby zadzia≥o to upoewniamy sie ze mamy zainsalowany dotnet ef 
+	wykonuje mapwanie ale zeby zadzia≈Ço to upoewniamy sie ze mamy zainsalowany dotnet ef 
 	dotnet tool install --global dotnet-ef --version 8.0.0  (opcjonalnie podajemy wersje jesli nie mamy zainstalowanej najnowszej wersji core)
 
 	potrzebujemy jeszcze dotnet add package Microsoft.EntityFrameworkCore.Design
 
 	oraz add package Microsoft.EntityFrameworkCore.SqlServer
 
-- dodalismy recznie wyswietlanie listy produktÛw
+- dodalismy recznie wyswietlanie listy produkt√≥w
 
-- uzylismy wbudowane w visual studio scaffoldingu do wygenerowania automatycznego widkÛw razor CRUD 
+- uzylismy wbudowane w visual studio scaffoldingu do wygenerowania automatycznego widk√≥w razor CRUD 
 
-3) Tworzymy aplikacjÍ MVC 
+3) Tworzymy aplikacjƒô MVC 
 
  - podstawy komunikacji kontroler-vidok-model - calculator i newCalculator
- - zrobilismy scaffoling bazy (wczesniej skopiowaliúmy z csproj paczki potrzebne do scaffoldingu)
+ - zrobilismy scaffoling bazy (wczesniej skopiowali≈õmy z csproj paczki potrzebne do scaffoldingu)
  - robimy scaffolding kodu 
-   - najpierw musimy zainstalowaÊ: dotnet tool install -g dotnet-aspnet-codegenerator
+   - najpierw musimy zainstalowaƒá: dotnet tool install -g dotnet-aspnet-codegenerator
    - generujemy automatycznie gotowy kontroler typu CRUD :
      dotnet aspnet-codegenerator controller -name ProductsController -m Product -dc ShopContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
 
@@ -39,9 +39,9 @@
 4) Tworzymy nowy aplikacje MVC - ale tym razem bedzie ona korzystac z api 
  - najpierw zrobilismy scaffolding bazy 
  - potem na podstawie utworzonego datacontextu zrobilsimy scaffolding kodu (zrobienie CRUD controlera)
- - potem przenieslismy ProductServiceDoShared -> zeby korzysta≥ z niego klient WPF oraz klient MVC 
- - wstrzyklenlismy w program.cs konfiguracje serwisÛw oraz pobralismy konfiguracje AppSetings z appsetings.json, ktÛra zawiera adresy endpointÛw 
- - podmieniliúmy wgyenerowane metody na metody, ktÛre komunikuja sie z API zamist bazy danych 
+ - potem przenieslismy ProductServiceDoShared -> zeby korzysta≈Ç z niego klient WPF oraz klient MVC 
+ - wstrzyklenlismy w program.cs konfiguracje serwis√≥w oraz pobralismy konfiguracje AppSetings z appsetings.json, kt√≥ra zawiera adresy endpoint√≥w 
+ - podmienili≈õmy wgyenerowane metody na metody, kt√≥re komunikuja sie z API zamist bazy danych 
 
 
- tryb: zdalnie/stacjonarnie ? 
+ tryb: zdalnie
